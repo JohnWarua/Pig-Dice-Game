@@ -30,3 +30,11 @@
   font-family: 'Russo One', sans-serif;
   color: red;
 }
+.rules {
+  margin: 20px;
+  padding: 20px;
+  background-color: blue;
+  border-radius: 15px;
+  box-shadow: 3px 3px 11px #000000;
+
+}
