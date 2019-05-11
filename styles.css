@@ -36,5 +36,14 @@
   background-color: blue;
   border-radius: 15px;
   box-shadow: 3px 3px 11px #000000;
-
+}
+.add{
+  margin: 20px;
+  padding: 20px;
+  background-color: skyblue;
+  border-radius: 15px;
+  box-shadow: 3px 3px 11px #000000;
+  margin-left: 20%;
+  color: white;
+  font-family: 'Akronim', cursive;
 }
