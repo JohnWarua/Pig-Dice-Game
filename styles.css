@@ -75,3 +75,10 @@
   border-radius: 15px;
   box-shadow: 3px 3px 11px #000000;
 }
+.column {
+  margin-left: 20%;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
