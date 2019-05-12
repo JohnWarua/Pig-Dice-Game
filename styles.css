@@ -106,3 +106,6 @@ body {
   font-family: 'Russo One', sans-serif;
   color: red;
 }
+.Gameplay{
+  display: none;
+}
