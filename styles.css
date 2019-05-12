@@ -54,3 +54,10 @@
   border-radius: 15px;
   box-shadow: 3px 3px 11px #000000;
 }
+.holder{
+  margin: 10px;
+  padding: 10px;
+  background-color: skyblue;
+  border-radius: 15px;
+  box-shadow: 3px 3px 11px #000000;
+}
