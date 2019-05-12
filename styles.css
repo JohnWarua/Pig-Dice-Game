@@ -2,19 +2,50 @@
   color: pink;
   font-family: 'Akronim', cursive;
 }
+body {
+  background-image: url("images/Dice image.jpg");
+  background-position: center;
+  height: 1080px;
+}
 .head2 {
   color: skyblue;
 }
+.sent1 {
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
 .header3 {
   color: green;
+}
+.rules {
+  margin: 20px;
+  padding: 20px;
+  background-color: blue;
+  border-radius: 15px;
+  box-shadow: 3px 3px 11px #000000;
+
 }
 .header2 {
   color: purple;
   font-family: 'Gugi', cursive;
 }
+.newgame {
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  box-shadow: 3px 3px 11px #000000;
+
+}
 .header1 {
   color: skyblue;
   font-family: 'Gugi', cursive;
+}
+.column label{
+  color: orange;
+  font-family: 'Akronim', cursive;
+  float: left;
+  width: 33.33%;
 }
 .btn {
   padding: 20px;
@@ -25,17 +56,12 @@
   color: blue;
   margin-left: 45%;
 }
-.Reset{
-  background-color: skyblue;
-  font-family: 'Russo One', sans-serif;
-  color: red;
+.row {
+  display: flex;
+  flex-direction: row;
 }
-.rules {
-  margin: 20px;
-  padding: 20px;
-  background-color: blue;
-  border-radius: 15px;
-  box-shadow: 3px 3px 11px #000000;
+.column {
+  margin-left: 20%;
 }
 .add{
   margin: 20px;
@@ -46,20 +72,6 @@
   margin-left: 20%;
   color: white;
   font-family: 'Akronim', cursive;
-}
-.roller{
-  margin: 10px;
-  padding: 10px;
-  background-color: skyblue;
-  border-radius: 15px;
-  box-shadow: 3px 3px 11px #000000;
-}
-.holder{
-  margin: 10px;
-  padding: 10px;
-  background-color: skyblue;
-  border-radius: 15px;
-  box-shadow: 3px 3px 11px #000000;
 }
 .roller2{
   margin: 10px;
@@ -75,15 +87,22 @@
   border-radius: 15px;
   box-shadow: 3px 3px 11px #000000;
 }
-.column {
-  margin-left: 20%;
+.roller{
+  margin: 10px;
+  padding: 10px;
+  background-color: skyblue;
+  border-radius: 15px;
+  box-shadow: 3px 3px 11px #000000;
 }
-.row {
-  display: flex;
-  flex-direction: row;
+.holder{
+  margin: 10px;
+  padding: 10px;
+  background-color: skyblue;
+  border-radius: 15px;
+  box-shadow: 3px 3px 11px #000000;
 }
-body {
-  background-image: url("images/Dice image.jpg");
-  background-position: center;
-  height: 1080px;
+.Reset{
+  background-color: skyblue;
+  font-family: 'Russo One', sans-serif;
+  color: red;
 }
