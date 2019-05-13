@@ -41,7 +41,11 @@ Player.prototype.winnerCheck = function () {
 }
 $(document).ready(function() {
   $(".btn").click(function() {
-  $(".Gameplay").show();
+    var player1 = prompt("Enter Your Name...");
+    $(".names").text(player1);
+    var player2 = prompt("Enter Your Name...")
+    $(".names2").text(player2);
+      $(".Gameplay").show();
  });
   $(".Reset").click(function() {
     $(".Gameplay").hide();
