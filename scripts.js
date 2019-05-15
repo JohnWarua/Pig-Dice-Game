@@ -21,6 +21,7 @@ Gamer.prototype.rounds = function(){
   }
   return guess;
 }
+
 Gamer.prototype.wait = function(){
   this.total += this.sum;
   this.sum = 0;
@@ -36,6 +37,8 @@ $(document).ready(function() {
       $(".Gameplay").show();
  });
 
+
+
   $(".roller").click(function() {
     $(".rounder").text(player1.rounds());
     $(".rs1").text(player1.sum);
@@ -45,6 +48,8 @@ $(document).ready(function() {
   $(".rounder2").text(player2.rounds());
     $(".rs2").text(player2.sum)
   });
+
+
 
   $("button.holder").click(function() {
     $(".ts1").text(player1.wait());
