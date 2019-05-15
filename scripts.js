@@ -1,44 +1,32 @@
-var throwdice = function () {
-  return Math.floor(6*Math.random ()) + 1;
+function search(){
+  var john = Math.floor(Math.random()*6)+1;
+  return john;
 }
-
-function Player (turn) {
-  this.roll = 0;
-  this.tempscore = 0;
-  this.totalscore = 0;
-  this.turn =0;
+function Gamer(){
+  this.total = 0;
+  this.sum = 0;
 }
+player1 = new Gamer();
+player2 = new Gamer();
 
-Player.prototype.rollone = function () {
-  if (this.roll===1) {
-    this.tempscore = 0;
-    this.changeturn ();
+
+Gamer.prototype.rounds = function(){
+  var guess = search();
+  if (guess ===1){
+    this.sum = 0;
+    alert("You rolled a 1,Next player please!!!");
   }
   else {
-    this.tempscore += this.roll
+    this.sum += guess;
   }
+  return guess;
+}
+Gamer.prototype.wait = function(){
+  this.total += this.sum;
+  this.sum = 0;
+  return this.total;
 }
 
-Player.prototype.hold = function (){
-  this.totalscore += this.tempscore;
-  this.tempscore =o;
-  this.changeturn ();
-}
-
-Player.prototype.changeturn = function (){
-  if(this.roll===1) {
-    this.turn = false;
-  }
-  else {
-    this.turn = true;
-  }
-}
-
-Player.prototype.winnerCheck = function () {
-  if(this.totalscore>=100) {
-    alert(" You are the winner!!");
-  }
-}
 $(document).ready(function() {
   $(".btn").click(function() {
     var player1 = prompt("Enter Your Name...");
@@ -47,28 +35,23 @@ $(document).ready(function() {
     $(".names2").text(player2);
       $(".Gameplay").show();
  });
-  $(".Reset").click(function() {
-    $(".Gameplay").hide();
+
+  $(".roller").click(function() {
+    $(".rounder").text(player1.rounds());
+    $(".rs1").text(player1.sum);
   });
 
-  $("button.roller").click(function(event) {
-    rbtn1 = throwdice() ;
-    $(".rounder").text(rbtn1);
-    player1.rollone ()
-    $(".rs1").text(player1.tempscore);
+  $(".roller2").click(function() {
+  $(".rounder2").text(player2.rounds());
+    $(".rs2").text(player2.sum)
   });
 
-  $("button.roller2").click(function(event) {
-    rbtn2 = throwdice() ;
-    $(".rounder2").text(rbtn2);
-    player2.rollone ()
-    $(".rs2").text(player2.tempscore);
+  $("button.holder").click(function() {
+    $(".ts1").text(player1.wait());
+    alert("Next Player Turn please!!!");
   });
-  $("button.holder").click(function(event) {
-    player1.hold();
-    $(".ts1").text(player1.totalscore);
-    $(".rs1").empty();
-    $(".rounder").empty();
-    player.winnerCheck();
+  $("button.holder2").click(function() {
+    $(".ts2").text(player2.wait());
+    alert("Next Player turn please!!!");
   });
 });
